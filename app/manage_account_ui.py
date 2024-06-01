@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'sub01.ui'
+## Form generated from reading UI file 'manage_account.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.7.0
 ##
@@ -15,22 +15,27 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QHBoxLayout, QHeaderView, QPushButton,
-    QSizePolicy, QSpacerItem, QTreeWidget, QTreeWidgetItem,
-    QVBoxLayout, QWidget)
+from PySide6.QtWidgets import (QApplication, QHBoxLayout, QHeaderView, QMainWindow,
+    QMenuBar, QPushButton, QSizePolicy, QSpacerItem,
+    QStatusBar, QTreeWidget, QTreeWidgetItem, QVBoxLayout,
+    QWidget)
 
-class Ui_B1_Action(object):
-    def setupUi(self, B1_Action):
-        if not B1_Action.objectName():
-            B1_Action.setObjectName(u"B1_Action")
-        B1_Action.resize(450, 300)
-        self.verticalLayout_6 = QVBoxLayout(B1_Action)
-        self.verticalLayout_6.setObjectName(u"verticalLayout_6")
-        self.horizontalLayout = QHBoxLayout()
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        if not MainWindow.objectName():
+            MainWindow.setObjectName(u"MainWindow")
+        MainWindow.resize(434, 343)
+        self.centralwidget = QWidget(MainWindow)
+        self.centralwidget.setObjectName(u"centralwidget")
+        self.horizontalLayoutWidget = QWidget(self.centralwidget)
+        self.horizontalLayoutWidget.setObjectName(u"horizontalLayoutWidget")
+        self.horizontalLayoutWidget.setGeometry(QRect(0, 0, 431, 301))
+        self.horizontalLayout = QHBoxLayout(self.horizontalLayoutWidget)
         self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout = QVBoxLayout()
         self.verticalLayout.setObjectName(u"verticalLayout")
-        self.treeWidget = QTreeWidget(B1_Action)
+        self.treeWidget = QTreeWidget(self.horizontalLayoutWidget)
         font = QFont()
         font.setBold(True)
         __qtreewidgetitem = QTreeWidgetItem()
@@ -62,7 +67,7 @@ class Ui_B1_Action(object):
 
         self.verticalLayout_1.addItem(self.verticalSpacer)
 
-        self.pushButton = QPushButton(B1_Action)
+        self.pushButton = QPushButton(self.horizontalLayoutWidget)
         self.pushButton.setObjectName(u"pushButton")
 
         self.verticalLayout_1.addWidget(self.pushButton)
@@ -71,7 +76,7 @@ class Ui_B1_Action(object):
 
         self.verticalLayout_1.addItem(self.verticalSpacer_2)
 
-        self.pushButton_2 = QPushButton(B1_Action)
+        self.pushButton_2 = QPushButton(self.horizontalLayoutWidget)
         self.pushButton_2.setObjectName(u"pushButton_2")
 
         self.verticalLayout_1.addWidget(self.pushButton_2)
@@ -80,7 +85,7 @@ class Ui_B1_Action(object):
 
         self.verticalLayout_1.addItem(self.verticalSpacer_3)
 
-        self.pushButton_3 = QPushButton(B1_Action)
+        self.pushButton_3 = QPushButton(self.horizontalLayoutWidget)
         self.pushButton_3.setObjectName(u"pushButton_3")
 
         self.verticalLayout_1.addWidget(self.pushButton_3)
@@ -89,7 +94,7 @@ class Ui_B1_Action(object):
 
         self.verticalLayout_1.addItem(self.verticalSpacer_4)
 
-        self.pushButton_4 = QPushButton(B1_Action)
+        self.pushButton_4 = QPushButton(self.horizontalLayoutWidget)
         self.pushButton_4.setObjectName(u"pushButton_4")
 
         self.verticalLayout_1.addWidget(self.pushButton_4)
@@ -98,7 +103,7 @@ class Ui_B1_Action(object):
 
         self.verticalLayout_1.addItem(self.verticalSpacer_5)
 
-        self.pushButton_5 = QPushButton(B1_Action)
+        self.pushButton_5 = QPushButton(self.horizontalLayoutWidget)
         self.pushButton_5.setObjectName(u"pushButton_5")
 
         self.verticalLayout_1.addWidget(self.pushButton_5)
@@ -107,7 +112,7 @@ class Ui_B1_Action(object):
 
         self.verticalLayout_1.addItem(self.verticalSpacer_6)
 
-        self.pushButton_6 = QPushButton(B1_Action)
+        self.pushButton_6 = QPushButton(self.horizontalLayoutWidget)
         self.pushButton_6.setObjectName(u"pushButton_6")
 
         self.verticalLayout_1.addWidget(self.pushButton_6)
@@ -123,26 +128,31 @@ class Ui_B1_Action(object):
 
         self.horizontalLayout.addLayout(self.verticalLayout_1)
 
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QMenuBar(MainWindow)
+        self.menubar.setObjectName(u"menubar")
+        self.menubar.setGeometry(QRect(0, 0, 434, 22))
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QStatusBar(MainWindow)
+        self.statusbar.setObjectName(u"statusbar")
+        MainWindow.setStatusBar(self.statusbar)
 
-        self.verticalLayout_6.addLayout(self.horizontalLayout)
+        self.retranslateUi(MainWindow)
 
-
-        self.retranslateUi(B1_Action)
-
-        QMetaObject.connectSlotsByName(B1_Action)
+        QMetaObject.connectSlotsByName(MainWindow)
     # setupUi
 
-    def retranslateUi(self, B1_Action):
-        B1_Action.setWindowTitle(QCoreApplication.translate("B1_Action", u"Form", None))
+    def retranslateUi(self, MainWindow):
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
         ___qtreewidgetitem = self.treeWidget.headerItem()
-        ___qtreewidgetitem.setText(2, QCoreApplication.translate("B1_Action", u"PW", None));
-        ___qtreewidgetitem.setText(1, QCoreApplication.translate("B1_Action", u"ID", None));
-        ___qtreewidgetitem.setText(0, QCoreApplication.translate("B1_Action", u"Category", None));
-        self.pushButton.setText(QCoreApplication.translate("B1_Action", u"Add", None))
-        self.pushButton_2.setText(QCoreApplication.translate("B1_Action", u"Edit", None))
-        self.pushButton_3.setText(QCoreApplication.translate("B1_Action", u"Remove", None))
-        self.pushButton_4.setText(QCoreApplication.translate("B1_Action", u"Up", None))
-        self.pushButton_5.setText(QCoreApplication.translate("B1_Action", u"Down", None))
-        self.pushButton_6.setText(QCoreApplication.translate("B1_Action", u"Close", None))
+        ___qtreewidgetitem.setText(2, QCoreApplication.translate("MainWindow", u"PW", None));
+        ___qtreewidgetitem.setText(1, QCoreApplication.translate("MainWindow", u"ID", None));
+        ___qtreewidgetitem.setText(0, QCoreApplication.translate("MainWindow", u"Category", None));
+        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Add", None))
+        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"Edit", None))
+        self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"Remove", None))
+        self.pushButton_4.setText(QCoreApplication.translate("MainWindow", u"Up", None))
+        self.pushButton_5.setText(QCoreApplication.translate("MainWindow", u"Down", None))
+        self.pushButton_6.setText(QCoreApplication.translate("MainWindow", u"Close", None))
     # retranslateUi
 
