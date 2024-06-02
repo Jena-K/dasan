@@ -39,6 +39,184 @@
         <attribute name="title">
          <string>Tab 1</string>
         </attribute>
+        <widget class="QPushButton" name="button_popup_accnt">
+         <property name="geometry">
+          <rect>
+           <x>360</x>
+           <y>230</y>
+           <width>75</width>
+           <height>24</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>PushButton</string>
+         </property>
+        </widget>
+        <widget class="QTreeWidget" name="treeWidget">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>470</x>
+           <y>60</y>
+           <width>313</width>
+           <height>422</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777212</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="baseSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="contextMenuPolicy">
+          <enum>Qt::ContextMenuPolicy::DefaultContextMenu</enum>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Shape::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Shadow::Sunken</enum>
+         </property>
+         <property name="verticalScrollBarPolicy">
+          <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOn</enum>
+         </property>
+         <property name="horizontalScrollBarPolicy">
+          <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QAbstractScrollArea::SizeAdjustPolicy::AdjustIgnored</enum>
+         </property>
+         <property name="autoScroll">
+          <bool>true</bool>
+         </property>
+         <property name="tabKeyNavigation">
+          <bool>true</bool>
+         </property>
+         <property name="selectionMode">
+          <enum>QAbstractItemView::SelectionMode::ContiguousSelection</enum>
+         </property>
+         <property name="selectionBehavior">
+          <enum>QAbstractItemView::SelectionBehavior::SelectItems</enum>
+         </property>
+         <property name="verticalScrollMode">
+          <enum>QAbstractItemView::ScrollMode::ScrollPerItem</enum>
+         </property>
+         <property name="allColumnsShowFocus">
+          <bool>false</bool>
+         </property>
+         <property name="headerHidden">
+          <bool>false</bool>
+         </property>
+         <attribute name="headerCascadingSectionResizes">
+          <bool>false</bool>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>Category</string>
+          </property>
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+          <property name="background">
+           <color>
+            <red>255</red>
+            <green>223</green>
+            <blue>221</blue>
+           </color>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>ID</string>
+          </property>
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+          <property name="background">
+           <color>
+            <red>255</red>
+            <green>223</green>
+            <blue>221</blue>
+           </color>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>PW</string>
+          </property>
+          <property name="font">
+           <font>
+            <bold>true</bold>
+            <hintingpreference>PreferFullHinting</hintingpreference>
+           </font>
+          </property>
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+          <property name="background">
+           <color>
+            <red>255</red>
+            <green>223</green>
+            <blue>221</blue>
+           </color>
+          </property>
+         </column>
+        </widget>
+        <widget class="QTableWidget" name="tableWidget">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>80</y>
+           <width>313</width>
+           <height>422</height>
+          </rect>
+         </property>
+         <property name="verticalScrollBarPolicy">
+          <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOn</enum>
+         </property>
+         <property name="horizontalScrollBarPolicy">
+          <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+         </property>
+         <column>
+          <property name="text">
+           <string>Category</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>ID</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>PW</string>
+          </property>
+         </column>
+        </widget>
        </widget>
        <widget class="QWidget" name="tab_2">
         <attribute name="title">
@@ -64,25 +242,20 @@
      <string>File</string>
     </property>
     <addaction name="actionLogout"/>
-    <addaction name="actionBackup"/>
    </widget>
    <widget class="QMenu" name="menuAccount">
     <property name="title">
-     <string>Account</string>
+     <string>Bill</string>
     </property>
+    <addaction name="actionBill_Management"/>
    </widget>
    <widget class="QMenu" name="menuPlatform">
     <property name="title">
      <string>Platform</string>
     </property>
-    <widget class="QMenu" name="menuNaver">
-     <property name="title">
-      <string>Naver</string>
-     </property>
-     <addaction name="actionBlog"/>
-     <addaction name="actionCafe"/>
-    </widget>
-    <addaction name="menuNaver"/>
+    <addaction name="actionNaver_cafe"/>
+    <addaction name="actionNaver_blog"/>
+    <addaction name="separator"/>
     <addaction name="actionInstafgram"/>
    </widget>
    <addaction name="menuFile"/>
@@ -142,10 +315,33 @@
     <string>Blog</string>
    </property>
   </action>
+  <action name="actionNaver_Blog">
+   <property name="text">
+    <string>Naver Blog</string>
+   </property>
+  </action>
+  <action name="actionNaver_blog">
+   <property name="text">
+    <string>Naver blog</string>
+   </property>
+  </action>
+  <action name="actionNaver_cafe">
+   <property name="text">
+    <string>Naver cafe</string>
+   </property>
+  </action>
+  <action name="actionBill_Management">
+   <property name="text">
+    <string>Bill Management</string>
+   </property>
+  </action>
  </widget>
  <tabstops>
   <tabstop>tabWidget</tabstop>
  </tabstops>
  <resources/>
  <connections/>
+ <slots>
+  <slot>slot_addRow_main()</slot>
+ </slots>
 </ui>
